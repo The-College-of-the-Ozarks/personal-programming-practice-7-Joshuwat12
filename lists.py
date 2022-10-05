@@ -5,13 +5,20 @@
 # Outputs the average and largest element of the list
 
 
-# TODO: COMPLETE THIS DEFINITION
+# Functions
 def average(l):
-    pass
+  total = 0
+  for i in l:
+    total += i
+  return total / len(l)
 
 # TODO: COMPLETE THIS DEFINITION
 def largest(l):
-    pass
+  m = l[0]
+  for i in l[1:]:
+    if i > m:
+      m = i
+  return m
 
 
 # Inputs the list from the user as a string
